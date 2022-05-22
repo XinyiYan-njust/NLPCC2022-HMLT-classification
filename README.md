@@ -3,7 +3,7 @@
  
  ## Code
 
-The code for these Multi-label Classification experiments are adapted from the [Hierarchical-Multi-Label-Text-Classification]([[https://github.com/RandolphVI/Hierarchical-Multi-Label-Text-Classification]]).
+The code for these Multi-label Classification experiments are adapted from the [Hierarchical-Multi-Label-Text-Classification](https://github.com/RandolphVI/Hierarchical-Multi-Label-Text-Classification).
 We have improved the input data format of the code, extending the multi-level labels from the numbers to the text, and encoding the text category labels.
 The paper link corresponding to the code is: (https://dl.acm.org/citation.cfm?id=3357384.3357885). 
 
