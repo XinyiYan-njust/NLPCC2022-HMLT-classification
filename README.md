@@ -23,9 +23,9 @@ The paper link corresponding to the code is: (https://dl.acm.org/citation.cfm?id
 
 ## Project
 
-项目的架构如下:
+The main structure of the project is shown below:
 
-```项目根目录
+```root dir
 .
 ├── HARNN
 │   ├── train_harnn.py
@@ -148,7 +148,7 @@ Direct writing; the secondary label coding is the original value plus the number
     {"id": "1", "labels": [1, 3, 10, 27, 35, 69, 534, 535, 863, 1795], "predict_labels": [1, 3, 4, 10, 70, 1795, 1797], "predict_scores": [0.9549, 0.6582, 0.6729, 0.5173, 0.3687, 0.5, 0.4999]}；
     It is decoded and corresponding to the original data to obtain:
     {"title": "Electromagnetic Confinement via Spin–Orbit Interaction in Anisotropic Dielectrics", "abstract": "We investigate electromagnetic propagation in uniaxial dielectrics with a transversely varying orientation of the optic axis, the latter staying orthogonal everywhere in the propagation direction. In such a geometry, the field experiences no refractive index gradients, yet it acquires a transversely modulated Pancharatnam–Berry phase, that is, a geometric phase originating from a spin–orbit interaction. We show that the periodic evolution of the geometric phase versus propagation gives rise to a longitudinally invariant effective potential. In certain configurations, this geometric phase can provide transverse confinement and waveguiding. The theoretical findings are tested and validated against numerical simulations of the complete Maxwell’s equations. Our results introduce and illustrate the role of geometric phases on electromagnetic propagation over distances well exceeding the diffraction length, paving the way to a whole new family of guided waves and waveguides that do not rely on refractive index tailoring.", "level1": ["Physical chemistry", "Theoretical and computational chemistry", "Cross-disciplinary concepts"], "level2": ["Physical and chemical properties", "Optics", "Quantum mechanics"], "level3": ["Photonics", "Optical properties", "Polarization"], "levels": ["Physical chemistry", "Theoretical and computational chemistry", "Cross-disciplinary concepts", "Physical and chemical properties", "Optics", "Quantum mechanics", "Photonics", "Optical properties", "Polarization"], "pred_labels": ["Physical chemistry", "Cross-disciplinary concepts", "Materials science", "Theoretical and computational chemistry", "Physical and chemical processes"]}
-    再使用eval.py进行模型的评估。
+     The structure predicted by the model was again evaluated with the eval.py
 
 ## Usage
 
