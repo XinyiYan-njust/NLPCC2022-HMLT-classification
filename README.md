@@ -102,14 +102,17 @@ The overall model architecture diagram is as follows:
       Where r_ {aat} ^ {h}, W_ {att} ^ h represents the text-label interaction information of the h-level layer, and the attention weight for the interaction with the h-level layer text and label, respectively.
       P_L ^ h, A_L ^ h respectively represents the probability of h-level layer label prediction, with information on the overall representation of the h-leve layer model.
       \ omega ^ h transmits the information learned by the h-layer as memory information.
-      <1> Text-Category Attention
+     
+     <1> Text-Category Attention
       The following figure is a Text-Category Attention computational graph, whose main goal is to learn the input text interactively with the labels at all levels, using a method similar to the attention mechanism.
       ![](https://upload-images.jianshu.io/upload_images/20501870-93767c9f5eb32d35.png?imageMogr2/auto-orient/strip|imageView2/2/w/595/format/webp)
       The calculation formula corresponds as follows: V_h is updated with the information of the previous layer to accept the information related to the label; O_h, W_ {att} ^ h is the attention of the input text and the h layer label as the weight value; M_h, r_ {att} ^ h calculates the labeled text information and obtains the final text representation information.
       ![](https://upload-images.jianshu.io/upload_images/20501870-861faba1df222591.png?imageMogr2/auto-orient/strip|imageView2/2/w/202/format/webp)
+      
       <2> Class Prediction Module
       The purpose of this module is to combine the original text semantic representation with the associated text category representation of the previous layer of information to generate the overall representation and predict the category of each layer, with the update formula:
       ![](https://upload-images.jianshu.io/upload_images/20501870-cc71f15b917081f3.png?imageMogr2/auto-orient/strip|imageView2/2/w/452/format/webp)
+      
       <3> Class Dependency Module
       The purpose of this module is to interactive transfer learning the dependencies between different levels by retaining the hierarchical information of all levels. It mainly means to learn the degree of the association of each sequence in the text to the label in all levels, and to learn the information repeatedly.
       ![](https://upload-images.jianshu.io/upload_images/20501870-8bb9061d221d46d4.png?imageMogr2/auto-orient/strip|imageView2/2/w/407/format/webp)
